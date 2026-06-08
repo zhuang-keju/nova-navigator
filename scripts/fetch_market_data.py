@@ -10,6 +10,9 @@ def main() -> None:
     """Fetch asset prices and FX rates, then save them as processed CSV files."""
     start = "2026-05-01"
     end = "2026-06-05"
+    # TODO: In the next step, read tickers from data/manual/fund_holdings.csv
+    # and benchmark_ticker from data/manual/fund_info.csv, instead of hardcoding
+    # the ticker list.
     tickers = [
         "NVDA",
         "MSFT",
